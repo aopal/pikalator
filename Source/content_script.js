@@ -76,19 +76,46 @@ function pikaParty() {
     }
 
     function partay() {
+
+        var numPikas = Math.floor((Math.random() * 4) + 1);
+        var pikas = [];
+        for (var xd = 0; xd < numPikas; xd++) {
+            pikas[xd] = document.createElement('img');
+
+            var pic = Math.floor((Math.random() * 100) + 1);
+            if (pic <= 30) {
+                pikas[xd].src = chrome.extension.getURL('PikaFly1.png');
+            } if else (pic <= 60 && pic > 30) {
+                pikas[xd].src = chrome.extension.getURL('PikaFly2.png');
+            } if else (pic <= 90 && pic > 60) {
+                pikas[xd].src = chrome.extension.getURL('PikaFly3.png');
+            } if else (pic <= 95 && pic > 90) {
+                pikas[xd].src = chrome.extension.getURL('PikaFly4.png');
+            } else {
+                pikas[xd].src = chrome.extension.getURL('PikaFly5.png');
+            }
+            
+            var anim = Math.floor((Math.random() * 100) + 1);
+            
+
+            
+        }
+
         var pikaPop = document.createElement('img');
         pikaPop.src = chrome.extension.getURL('PikaPop1.png');
 
         Math.floor((Math.random() * 100) + 1);
 
 
-        
+
 
 
         function PikaPop1(img) {
             img.setAttribute('id', 'pikalatorPopPeek1');
             document.body.appendChild(pikaPop);
-            setTimeout(function(){img.parentNode.removeChild(img);}, 4500)
+            setTimeout(function () {
+                img.parentNode.removeChild(img);
+            }, 4500)
         }
     }
 
