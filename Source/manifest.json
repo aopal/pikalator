@@ -6,25 +6,23 @@
     "icons": {
         "128": "icon.png"
     },
-    "content_scripts": [
-        {
-            "matches": ["*://*/*"],
-            "js": ["content_script.js"],
-            "css": ["style.css"],
-            "run_at": "document_end"
-		}
-	],
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["content_script.js"],
+        "css": ["style.css"],
+        "run_at": "document_end"
+    }],
     "web_accessible_resources": [
-		"PokemonSolid.ttf",
-		"PokemonSolid.woff2",
-		"pikapika.ttf",
-		"pikapika.woff2", 
-        "PikaPop1.png", 
-        "PikaPop2.png", 
+        "PokemonSolid.ttf",
+        "PokemonSolid.woff2",
+        "pikapika.ttf",
+        "pikapika.woff2",
+        "PikaPop1.png",
+        "PikaPop2.png",
         "PikaPop3.png",
         "Pokeball_icon.png",
         "giphy.gif",
         "cursor.png",
         "theme.mp3"
-	]
+    ]
 }
