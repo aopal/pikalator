@@ -2,6 +2,13 @@ walk(document.body);
 
 pikaParty();
 
+var music = new Audio(chrome.extension.getURL("theme.mp3"));
+music.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+music.play();
+
 function walk(node) {
     // We stole this from Ian fox <3
 

@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Pikalator",
     "version": "0.69",
-    "description": "Pika Pika motherfucker",
+    "description": "Pi Pika motherfucker",
     "icons": {
         "128": "icon.png"
     },
@@ -24,6 +24,7 @@
         "PikaPop3.png",
         "Pokeball_icon.png",
         "giphy.gif",
-        "cursor.png"
+        "cursor.png",
+        "theme.mp3"
 	]
 }
