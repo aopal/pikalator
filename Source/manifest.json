@@ -1,25 +1,26 @@
 {
-	"manifest_version": 2,
-	"name": "Pikalator",
-	"version": "0.69",
-	"description": "Pika Pika motherfucker",
-	"icons": {
-		"128": "icon.png"
-		},
-	"content_scripts": 
-	[
-		{
-			"matches": ["*://*/*"],
-			"js": ["content_script.js"],
-			"css": ["style.css"],
-			"run_at": "document_end"
+    "manifest_version": 2,
+    "name": "Pikalator",
+    "version": "0.69",
+    "description": "Pika Pika motherfucker",
+    "icons": {
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["content_script.js"],
+            "css": ["style.css"],
+            "run_at": "document_end"
 		}
 	],
-	"web_accessible_resources": [
+    "web_accessible_resources": [
 		"PokemonSolid.ttf",
 		"PokemonSolid.woff2",
 		"pikapika.ttf",
-		"pikapika.woff2"
+		"pikapika.woff2", 
+        "PikaPop1.png", 
+        "PikaPop2.png", 
+        "PikaPop3.png"
 	]
 }
-
