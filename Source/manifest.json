@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Grammer Ungooder",
-	"version": "1.1",
-	"description": "Fix all that pesky 'correct' grammer",
+	"name": "Pikalator",
+	"version": "0.69",
+	"description": "Pika Pika motherfucker",
 	"content_scripts": 
 	[
 		{
