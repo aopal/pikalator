@@ -1,12 +1,12 @@
 walk(document.body);
 
+pikaParty();
+
 function walk(node) {
     // We stole this from Ian fox <3
 
     // Ian stole this function from here:
     // http://is.gd/mwZp7E
-
-    pikaParty();
 
     	var child, next;
     
@@ -50,7 +50,7 @@ function handleText(textNode) {
 		else if(len <= 7)
 			newArr.push("Pikachu");
 		else{
-			var longasspikachu = "Pikachuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu";
+			var longasspikachu = "PikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachu";
 			newArr.push(longasspikachu.slice(0, len)); // im just gonna hope thats enough u's
 		}
 	}
@@ -65,7 +65,6 @@ function handleText(textNode) {
 		}
 	}
 	window.speechSynthesis.speak(msg);
-	
 	
 	textNode.nodeValue = retVal;
 }

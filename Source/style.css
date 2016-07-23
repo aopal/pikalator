@@ -14,4 +14,5 @@
 
 * {
   font-family: pokemon!important;  
+  cursor: url('chrome-extension://__MSG_@@extension_id__/cursor.png'), url('chrome-extension://__MSG_@@extension_id__/Pokeball_icon.png'), default;
 }
