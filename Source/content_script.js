@@ -33,6 +33,7 @@ function walk(node) {
 }
 
 function handleText(textNode) {
+<<<<<<< HEAD
     var v = textNode.nodeValue;
     console.log(v);
     var arr = v.split(" ");
@@ -62,6 +63,43 @@ function handleText(textNode) {
     console.log(newArr, "\n", retVal);
 
     textNode.nodeValue = retVal;
+=======
+	var v = textNode.nodeValue;
+	var arr = v.split(" ");
+	var newArr = [];
+
+	for (var i = 0; i < arr.length; i++) {
+		var len = arr[i].length;
+		if(!len)
+			break;
+		if(len <= 2)
+			newArr.push("Pi");
+		else if(len == 3)
+			newArr.push("Chu");
+		else if(len <= 5)
+			newArr.push("Pika");
+		else if(len <= 7)
+			newArr.push("Pikachu");
+		else{
+			var longasspikachu = "Pikachuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu";
+			newArr.push(longasspikachu.slice(0, len)); // im just gonna hope thats enough u's
+		}
+	}
+	var retVal = newArr.join(" ");
+	
+	var msg = new SpeechSynthesisUtterance(retVal);
+	var voices = speechSynthesis.getVoices();
+	for (var j = 0; j < voices.length; j++) {
+		if (voices[j].lang === "ko-KR"){
+			msg.voice = voices[j];
+			msg.voiceURI = voices[j].voiceURI;
+		}
+	}
+	window.speechSynthesis.speak(msg);
+	
+	
+	textNode.nodeValue = retVal;
+>>>>>>> master
 }
 
 function pikaParty() {
