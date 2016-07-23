@@ -3,6 +3,9 @@
 	"name": "Pikalator",
 	"version": "0.69",
 	"description": "Pika Pika motherfucker",
+	"icons": {
+		"128": "icon.png"
+		},
 	"content_scripts": 
 	[
 		{
