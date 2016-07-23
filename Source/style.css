@@ -1,17 +1,59 @@
 @font-face {
-  font-family: 'pokemon';
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('chrome-extension://__MSG_@@extension_id__/PokemonSolid.woff2') format('woff2'), /* Super Modern Browsers */
-       url('chrome-extension://__MSG_@@extension_id__/PokemonSolid.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: 'pokemon';
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('chrome-extension://__MSG_@@extension_id__/PokemonSolid.woff2') format('woff2'), /* Super Modern Browsers */
+    url('chrome-extension://__MSG_@@extension_id__/PokemonSolid.ttf') format('truetype');
+    /* Safari, Android, iOS */
 }
 
 @font-face {
-  font-family: 'pikapika';
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('chrome-extension://__MSG_@@extension_id__/pikapika.woff2') format('woff2'), /* Super Modern Browsers */
-       url('chrome-extension://__MSG_@@extension_id__/pikapika.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: 'pikapika';
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('chrome-extension://__MSG_@@extension_id__/pikapika.woff2') format('woff2'), /* Super Modern Browsers */
+    url('chrome-extension://__MSG_@@extension_id__/pikapika.ttf') format('truetype');
+    /* Safari, Android, iOS */
 }
 
 * {
-  font-family: pokemon!important;  
+    font-family: pokemon!important;
+}
+
+#pikalatorPopPeek1 {
+    position: fixed;
+    animation-duration: 4.5s;
+    right: 0px;
+    animation-name: popPeek1;
+}
+
+@keyframes popPeek1 {
+    from {
+        bottom: -300px;
+    }
+    10% {
+        bottom: -300px;
+    }
+    11% {
+        bottom: -135px;
+    }
+    35% {
+        transform: scaleX(1);
+    }
+    40% {
+        transform: scaleX(-1);
+    }
+    45% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(-1);
+    }
+    55% {
+        transform: scaleX(1);
+    }
+    80% {
+        bottom: -135px;
+    }
+    to {
+        bottom: -300px;
+    }
 }
