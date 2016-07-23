@@ -54,6 +54,18 @@ function handleText(textNode) {
 		}
 	}
 	var retVal = newArr.join(" ");
+	
+	var msg = new SpeechSynthesisUtterance(retVal);
+	var voices = speechSynthesis.getVoices();
+	for (var j = 0; j < voices.length; j++) {
+		if (voices[j].lang === "ko-KR"){
+			msg.voice = voices[j];
+			msg.voiceURI = voices[j].voiceURI;
+		}
+	}
+	window.speechSynthesis.speak(msg);
+	
+	
 	textNode.nodeValue = retVal;
 }
 
