@@ -33,10 +33,9 @@ function walk(node)
 
 function handleText(textNode) {
 	var v = textNode.nodeValue;
-	console.log(v);
 	var arr = v.split(" ");
 	var newArr = [];
-	console.log(arr);
+
 	for (var i = 0; i < arr.length; i++) {
 		var len = arr[i].length;
 		if(!len)
@@ -54,12 +53,7 @@ function handleText(textNode) {
 			newArr.push(longasspikachu.slice(0, len)); // im just gonna hope thats enough u's
 		}
 	}
-	
-	
 	var retVal = newArr.join(" ");
-	
-	console.log(newArr, "\n", retVal);
-
 	textNode.nodeValue = retVal;
 }
 
