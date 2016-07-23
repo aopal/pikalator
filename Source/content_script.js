@@ -33,37 +33,6 @@ function walk(node) {
 }
 
 function handleText(textNode) {
-<<<<<<< HEAD
-    var v = textNode.nodeValue;
-    console.log(v);
-    var arr = v.split(" ");
-    var newArr = [];
-    console.log(arr);
-    for (var i = 0; i < arr.length; i++) {
-        var len = arr[i].length;
-        if (!len)
-            break;
-        if (len <= 2)
-            newArr.push("Pi");
-        else if (len == 3)
-            newArr.push("Chu");
-        else if (len <= 5)
-            newArr.push("Pika");
-        else if (len <= 7)
-            newArr.push("Pikachu");
-        else {
-            var longasspikachu = "Pikachuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu";
-            newArr.push(longasspikachu.slice(0, len)); // im just gonna hope thats enough u's
-        }
-    }
-
-
-    var retVal = newArr.join(" ");
-
-    console.log(newArr, "\n", retVal);
-
-    textNode.nodeValue = retVal;
-=======
 	var v = textNode.nodeValue;
 	var arr = v.split(" ");
 	var newArr = [];
@@ -99,7 +68,6 @@ function handleText(textNode) {
 	
 	
 	textNode.nodeValue = retVal;
->>>>>>> master
 }
 
 function pikaParty() {
