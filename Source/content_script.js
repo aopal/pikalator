@@ -56,23 +56,16 @@ function handleText(textNode) {
             newArr.push("Pikachu");
         else {
             var longasspikachu = "PikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachuPikachu";
-            newArr.push(longasspikachu.slice(0, len)); // im just gonna hope thats enough u's
+            newArr.push(longasspikachu.slice(0, len)); // im just gonna hope thats enough
         }
     }
-    var retVal = newArr.join(" ");
+    var text = newArr.join(" ");
 
-    var msg = new SpeechSynthesisUtterance(retVal);
-    var voices = speechSynthesis.getVoices();
-    for (var j = 0; j < voices.length; j++) {
-        if (voices[j].lang === "ko-KR") {
-            msg.voice = voices[j];
-            msg.voiceURI = voices[j].voiceURI;
-            msg.volume = 1;
-        }
-    }
+    var msg = new SpeechSynthesisUtterance(text);
+    msg.lang = "ko-KR";
     window.speechSynthesis.speak(msg);
 
-    textNode.nodeValue = retVal;
+    textNode.nodeValue = text;
 }
 
 function pikaParty() {
