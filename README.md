@@ -1,6 +1,6 @@
 # Pikalator
 Have you ever wondered how pokemon browsed the internet?
-Well look no further than Pikalator&#2122;&#00A9;&#00AE;!
+Well look no further than Pikalator©®™!
 Pikalator (pikachu translator) automatically translates any webpage into the Pikachu dialect, as seen in the example image below. Whether you're new to learning Pokemon or already a master, you will love this carefully crafted extension that will transform your daily life.
 ![Pika pi](./example.png)
 
