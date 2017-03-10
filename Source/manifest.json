@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Pikalator",
     "version": "0.69",
-    "description": "Pika Pi motherfucker",
+    "description": "Pika Pi",
     "icons": {
         "128": "icon.png"
     },
